@@ -32,13 +32,16 @@ as n increases.
 2. We can use Big O to analyze the space complexity as well. How much additional memory do we need to allocate in order to run the code in our algo?
 
 === NOTE ===
+
 Have you noticed as n grows, the size of input itself (i.e., n) grows too and we are going to ignore that part.
 One might have heard about the Auxiliary Space Complexity, which is refer to space required by the algo.
 
 === Auxiliary Space ===
+
 Auxiliary space is the extra space or the temporary space used bu the algo.
 
 === Space Complexity ===
+
 Space Complexity = Auxiliary Space + space used by input.
 Space Complexity in other words, is the total space taken by algorithm with respect to input size.
 Space complexity depends on multiple things like compiler, programming language, or even the machine running the algo
