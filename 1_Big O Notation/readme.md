@@ -55,8 +55,8 @@ Space complexity depends on multiple things like compiler, programming language,
 
 ========================> Logarithm ===
 
-\*. Logarithm of a number means number of times you can divide that number by 2 until you get a value that is
-less than or equal to one.
+- Logarithm of a number means number of times you can divide that number by 2 until you get a value that is
+  less than or equal to one.
 
 log2(value) = exponent =============> 2^exponent = value
 log2(8) = 3 ==============> 2^3 = 8
