@@ -66,3 +66,8 @@ hence log === log2
 - Certain searching algorithms have logarithms time complexities
 - Effecient sorting algorithms invole logarithms
 - Recursion sometimes involves logarithmic space complexity
+
+=== Expense Rate ===
+
+- O(n^2) > O(nlogn) > O(n) > O(logn) > O(1)
+- O(1) is the fastest and O(n^2) is the slowest
