@@ -53,3 +53,13 @@ Space complexity depends on multiple things like compiler, programming language,
    -> Most primitives (boolean, numbers, undefined, null) are constants.
    -> Strings require O(n) where n is the string length.
    -> Reference types are generally O(n), where n is the length of array or number of keys of object.
+
+========================> Logarithm ===
+Logarithm of a number means number of times you can divide that number by 2 until you get a value that is
+less than or equal to one.
+
+log2(value) = exponent =============> 2^exponent = value
+log2(8) = 3 ==============> 2^3 = 8
+
+Like previously, we are aiming at the bigger picture so we will emit the 2.
+hence log === log2
