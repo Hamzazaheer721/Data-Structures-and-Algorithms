@@ -17,7 +17,7 @@
 
 2. Arrays
 
-Arrays are ordered list. Order is useful thing that we have in arrays but it certainly comes at the cost of its own.
+- Arrays are ordered list. Order is useful thing that we have in arrays but it certainly comes at the cost of its own.
 
 - Arrays are used when
 
@@ -26,14 +26,14 @@ Arrays are ordered list. Order is useful thing that we have in arrays but it cer
 
 - Big O of Arrays is
 
-* Insertion => It depends
-  - Insertion at end O(1)
-  - Insertion at start O(n) => it is complicated since when we add one element at the start, every elements in array are reindexed
-  - This is why adding and removing at the start is not encouraged, we should prefer push/pop over shift/unshift.
-* Removal => It depends
-* Searching O(n)
-* Accessing Data O(1)
-  - Note => accessing in js doesn't mean that to access value, js has to go through all the indices first. We have direct shortcut to it. Suppose if we have array of size 1500 and we have to access 1000th element then js will do it immediately, all we have to do is provide an index (1000) to access that value. Likewise for object as well which needs keys.
+  - Insertion => It depends
+    - Insertion at end O(1)
+    - Insertion at start O(n) => it is complicated since when we add one element at the start, every elements in array are reindexed
+    - This is why adding and removing at the start is not encouraged, we should prefer push/pop over shift/unshift.
+  - Removal => It depends
+  - Searching O(n)
+  - Accessing Data O(1)
+    - Note => accessing in js doesn't mean that to access value, js has to go through all the indices first. We have direct shortcut to it. Suppose if we have array of size 1500 and we have to access 1000th element then js will do it immediately, all we have to do is provide an index (1000) to access that value. Likewise for object as well which needs keys.
 
 - Big O of Array Operations
 
