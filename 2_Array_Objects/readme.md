@@ -2,3 +2,13 @@
 - Objects are used
   - When you don't need order
   - When you need fast access (insertion / deletion).
+- Big O of objects is
+  - Insertion O(1)
+  - Deletion O(1)
+  - Access O(1)
+  - Searching O(n)
+- Big O of Objects methods is
+  - Object.keys O(n), since it has to got to every single key and put it in array of keys.
+  - Object.values O(n)
+  - Object.enteries O(n)
+  - Object.hasOwnProperty O(1)
