@@ -1,0 +1,4 @@
+- Objects are unordered datastructures, which store data in key/value pairs
+- Objects are used
+  - When you don't need order
+  - When you need fast access (insertion / deletion).
