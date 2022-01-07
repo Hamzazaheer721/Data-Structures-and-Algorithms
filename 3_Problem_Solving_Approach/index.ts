@@ -37,8 +37,36 @@ const sameFuncConcise = (arrOne: number[], arrTwo: number[]): boolean => {
   return true
 }
 
-array1 = [1, 2, 3, 5]
-array2 = [9, 1, 25, 4]
+///////////////////////////////////////
+////////// FREQUENCY COUNTER /////////
+/////////////////////////////////////
+
+const sameOptimized = (arr1: number[], arr2: number[]) => {
+  if (arr1.length !== arr2.length) return false
+  const frq1 = {}
+  const frq2 = {}
+  for (let val of arr1) {
+    frq1[val] = (frq1[val] || 0) + 1
+  }
+  for (let val of arr2) {
+    frq2[val] = (frq2[val] || 0) + 1
+  }
+  for (let key in frq1) {
+    let _key: number = Number(key)
+    if (!frq2.hasOwnProperty(Number(_key) ** 2)) {
+      return false
+    }
+    if (frq2[_key] !== frq1[_key ** 2]) {
+      return false
+    }
+  }
+  return true
+}
+
+array1 = [1, 2, 3, 1, 5]
+array2 = [9, 1, 1, 25, 4]
+let _array2 = [9, 1, 4, 25, 1]
 
 console.log(`Result: ${sameFunc_(array1, array2)}`)
 console.log(`Result: ${sameFuncConcise(array1, array2)}`)
+console.log(`Result: ${sameOptimized(array1, _array2)}`)
