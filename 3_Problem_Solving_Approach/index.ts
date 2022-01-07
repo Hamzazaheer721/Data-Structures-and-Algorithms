@@ -67,6 +67,6 @@ array1 = [1, 2, 3, 1, 5]
 array2 = [9, 1, 1, 25, 4]
 let _array2 = [9, 1, 4, 25, 1]
 
-console.log(`Result: ${sameFunc_(array1, array2)}`)
-console.log(`Result: ${sameFuncConcise(array1, array2)}`)
-console.log(`Result: ${sameOptimized(array1, _array2)}`)
+console.log(`Result: ${sameFunc_(array1, array2)}`) // Time Complexity : O(n^2) nested loops
+console.log(`Result: ${sameFuncConcise(array1, array2)}`) // Time Complexity : O(n^2) nested loops
+console.log(`Result: ${sameOptimized(array1, _array2)}`) // Time Complexity : O(n + n + n) = O(3n) = O(n) Better
