@@ -16,4 +16,7 @@
   - Optimization
     - What if we have an array which is almost sorted then we will have to go through the un-necessary swaps.
       - Solution
-        introduce a noswap variable in each outer loop iteration and check if it is true or not if it is true then break.
+        introduce a noswap variable in each outer loop iteration and check if it is true or not if it is true then break. This solution could give us best possible time complexity when the array is already sorted.
+  - Time Complexity
+    - Best => O(n), array is already sorted
+    - Normal => O(n^2)

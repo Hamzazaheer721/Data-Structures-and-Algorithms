@@ -63,6 +63,6 @@ t2 = performance.now()
 console.log(`time: ${(t2 - t1) / 1000}`)
 
 t1 = performance.now()
-console.log(bubbleSortWithNoSwap([4, 2, 6, 1, 7]))
+console.log(bubbleSortWithNoSwap([4, 2, 6, 1, 7])) // best case can come in this version
 t2 = performance.now()
 console.log(`time: ${(t2 - t1) / 1000}`)
