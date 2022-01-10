@@ -13,3 +13,7 @@
 - Bubble Sort
   - Sorting algorithm where largest value bubbles to the top
   - visualgo.net
+  - Optimization
+    - What if we have an array which is almost sorted then we will have to go through the un-necessary swaps.
+      - Solution
+        introduce a noswap variable in each outer loop iteration and check if it is true or not if it is true then break.

@@ -32,6 +32,21 @@ const bubbleSortAsc_2 = (arr: number[]): number[] => {
   return arr
 }
 
+const bubbleSortWithNoSwap = (arr: number[]): number[] => {
+  let noswap: boolean = false
+  for (let i = arr.length; i > 0; i--) {
+    noswap = true
+    for (let j = 0; j < i - 1; j++) {
+      if (arr[j] > arr[j + 1]) {
+        ;[arr[j], arr[j + 1]] = [arr[j + 1], arr[j]]
+        noswap = false
+      }
+    }
+    if (noswap) break
+  }
+  return arr
+}
+
 let t1 = performance.now()
 console.log(bubbleSortAsc([4, 2, 6, 1, 7]))
 let t2 = performance.now()
@@ -44,5 +59,10 @@ console.log(`time: ${(t2 - t1) / 1000}`)
 
 t1 = performance.now()
 console.log(bubbleSortAsc_2([4, 2, 6, 1, 7]))
+t2 = performance.now()
+console.log(`time: ${(t2 - t1) / 1000}`)
+
+t1 = performance.now()
+console.log(bubbleSortWithNoSwap([4, 2, 6, 1, 7]))
 t2 = performance.now()
 console.log(`time: ${(t2 - t1) / 1000}`)
