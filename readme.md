@@ -1,6 +1,4 @@
-= ///////////////
-= --------BIG-O
-= //////////////
+- Big O
 
 1. What does better mean ?
    -> Faster
@@ -12,6 +10,5 @@
    -> Same machine can even give different times
    -> For fast algos, speed measurements may not be precise enough.
 
-   ---> Solution ---
-
+   - --- Solution ---
    - Instead of time, we will calculate number of simple operations that algo calculates
