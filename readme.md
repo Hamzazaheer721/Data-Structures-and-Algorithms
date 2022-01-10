@@ -13,4 +13,5 @@
    -> For fast algos, speed measurements may not be precise enough.
 
    ---> Solution ---
-   => Instead of time, we will calculate number of simple operations that algo calculates
+
+   - Instead of time, we will calculate number of simple operations that algo calculates
