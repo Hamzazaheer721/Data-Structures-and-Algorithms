@@ -23,13 +23,16 @@ console.log(a)
 /* update beginning index of array and start neext iteration from there*/
 
 const selectionSort = (arr: number[]): number[] => {
-  let smallest = arr[0]
+  let smallestIndex: number
   for (let i = 0; i < arr.length; i++) {
-    for (let j = i; j < arr.length; j++) {
-      if (arr[i] < arr[j]) {
-        ;[arr[i], arr[j]] = [arr[j], arr[i]]
-        smallest = arr[j]
+    smallestIndex = i
+    for (let j = i + 1; j < arr.length; j++) {
+      if (a[smallestIndex] < arr[j]) {
+        smallestIndex = j
       }
+    }
+    if (i !== smallestIndex) {
+      ;[arr[i], a[smallestIndex]] = [a[smallestIndex], a[i]]
     }
   }
   return arr
