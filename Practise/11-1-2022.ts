@@ -27,12 +27,12 @@ const selectionSort = (arr: number[]): number[] => {
   for (let i = 0; i < arr.length; i++) {
     smallestIndex = i
     for (let j = i + 1; j < arr.length; j++) {
-      if (a[smallestIndex] < arr[j]) {
+      if (arr[smallestIndex] > arr[j]) {
         smallestIndex = j
       }
     }
     if (i !== smallestIndex) {
-      ;[arr[i], a[smallestIndex]] = [a[smallestIndex], a[i]]
+      ;[arr[i], arr[smallestIndex]] = [arr[smallestIndex], arr[i]]
     }
   }
   return arr
