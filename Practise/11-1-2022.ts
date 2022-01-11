@@ -39,3 +39,23 @@ const selectionSort = (arr: number[]): number[] => {
 }
 
 console.log(selectionSort([4, 3, 6, 7, 2, 1, 23]))
+
+/* Insertion Sort */
+const insertion_sort = (arr: number[]): number[] => {
+  /* Iterate over array */
+  /* compare the current array element to its predecessor */
+  /* if key element is smaller than its predecessor check it against the previous one, move the greater element one position up to make space for swapped element*/
+  let indexToReplace
+  for (let i = 1; i < arr.length; i++) {
+    let j = i - 1
+    while (arr[j] > arr[i] && j >= 0) {
+      indexToReplace = j
+      ;[arr[indexToReplace], arr[i]] = [arr[i], arr[indexToReplace]]
+      j--
+    }
+    console.log('array: ', arr)
+  }
+  return arr
+}
+
+console.log(insertion_sort([4, 3, 6, 7, 2, 1, 23]))
