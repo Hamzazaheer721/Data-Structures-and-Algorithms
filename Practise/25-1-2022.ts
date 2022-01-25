@@ -19,13 +19,33 @@ const insertionSort = <T extends number>(arr: Array<T>) => {
 console.log(insertionSort(arr1)) // sorted
 
 const bubbleSort = (arr) => {
-  /* iterate the array */
-  /* Outer loop is for no of iterations and each iteration give us one sorted element at right place */
-  /* Inner loop is used for comparison with that specific element, if a[j] < a[i] then swap */
   for (let i = arr.length - 1; i >= 0; i--) {
-    for (let j = 0; j <= i; j++) {}
+    let swap = false
+    for (let j = 0; j <= i; j++) {
+      if (arr[j] < arr[j + 1]) {
+        ;[arr[j], arr[j + 1]] = [arr[j + 1], arr[j]]
+        swap = true
+      }
+    }
+    if (!swap) break
   }
   return arr
 }
 
-const selectionSort = () => {}
+console.log(bubbleSort(arr2))
+
+const selectionSort = (arr) => {
+  for (let i = 0; i < arr.length; i++) {
+    let curr = i
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[j] < arr[curr]) {
+        curr = j
+      }
+    }
+    if (curr === i) break
+    ;[arr[curr], arr[i]] = [arr[i], arr[curr]]
+  }
+  return arr
+}
+
+console.log(selectionSort(arr3))
