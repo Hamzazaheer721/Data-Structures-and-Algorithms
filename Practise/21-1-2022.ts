@@ -16,7 +16,7 @@ const selectionSortDuets = (arr: number[]): number[] => {
         currentLowestIndex = j
       }
     }
-    if (currentLowestIndex !== arr[i]) {
+    if (currentLowestIndex !== i) {
       ;[arr[i], arr[currentLowestIndex]] = [arr[currentLowestIndex], arr[i]]
     }
   }
