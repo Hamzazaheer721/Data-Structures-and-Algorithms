@@ -58,3 +58,4 @@ const selectionSort = (arr: Array<number>): Array<number> => {
 }
 
 console.log(selectionSort(arr3))
+//
